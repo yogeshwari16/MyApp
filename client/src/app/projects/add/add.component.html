@@ -1,0 +1,96 @@
+<h2 mat-dialog-title>Project Details</h2>
+<mat-dialog-content>
+    <form class="example-form row">
+        <!-- <label class="text-muted"></label>
+        <input type="text"> -->
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Project Title *" value="">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Project Summary"></textarea>
+        </mat-form-field>
+        <div fxLayout="row wrap">
+            <div class="p-10" fxflex.gt-sm="50">
+                <mat-form-field class="example-full-width">
+                    <mat-select placeholder="Project Type *">
+                        <mat-option *ngFor="let projectType of projectTypes" [value]="projectType.id">
+                            {{projectType.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="p-10" fxflex.gt-sm="50">
+                <mat-form-field class="example-full-width">
+                    <mat-select placeholder="Project Role">
+                        <!-- <mat-option *ngFor="let projectRole of projectRoles">
+                            {{projectRole.name}}
+                        </mat-option> -->
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <!-- <mat-form-field class="example-full-width">
+            <input matInput placeholder="Project Title *" value="">
+        </mat-form-field> -->
+        <label>Project Technologies</label>
+        <ng-multiselect-dropdown [placeholder]="'Project Technologies'" [data]="dropdownList"
+            [(ngModel)]="selectedItems" [settings]="dropdownSettings" (onSelect)="onItemSelect($event)"
+            (onSelectAll)="onSelectAll($event)">
+        </ng-multiselect-dropdown>
+
+        <div fxLayout="row wrap">
+            <div class="p-10" fxflex.gt-sm="20">
+                <mat-form-field class="example-full-width">
+                    <mat-select placeholder="Timeline">
+                        <mat-option *ngFor="let month of Months" [value]="month.id">
+                            {{month.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="p-10" fxflex.gt-sm="20">
+                <mat-form-field class="example-full-width">
+                    <mat-select placeholder="">
+                        <mat-option *ngFor="let year of Years" [value]="year.id">
+                            {{year.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <label>
+                To
+            </label>
+            <div class="p-10" fxflex.gt-sm="20">
+                <mat-form-field class="example-full-width">
+                    <mat-select placeholder="Timeline">
+                        <mat-option *ngFor="let month of Months" [value]="month.id">
+                            {{month.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="p-10" fxflex.gt-sm="20">
+                <mat-form-field class="example-full-width">
+                    <mat-select placeholder="">
+                        <mat-option *ngFor="let year of Years" [value]="year.id">
+                            {{year.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Key Responsibilities *"></textarea>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Project Highlights *"></textarea>
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <label class="text-muted">* All the fields are mandatory</label>
+    <!-- <button mat-button mat-dialog-close>No</button> -->
+    <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+    <button mat-raised-button [mat-dialog-close]="true" color="primary" class="float-right" (click)="save()">Save</button>
+</mat-dialog-actions>

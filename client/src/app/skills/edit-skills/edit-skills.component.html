@@ -1,0 +1,73 @@
+<div class="skill-dashboard">
+  <mat-card class="skill-board-blocks">
+    <mat-card-header>
+      <mat-card-title>
+        <h4>Teamcenter Implementation</h4>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="skill-content">
+      <div class="team-left">
+        <ul>
+          <li class="active-block">
+            <div class="configiration">
+              <h5>BMIDE Configuration</h5>
+              <span>></span>
+            </div>
+          </li>
+          <li>
+            <div class="configiration">
+              <h5>ITK Customisation</h5>
+              <span>></span>
+            </div>
+          </li>
+          <li>
+            <div class="configiration">
+              <h5>RAC Customisation</h5>
+              <span>></span>
+            </div>
+          </li>
+          <li>
+            <div class="configiration">
+              <h5>Active Workspace</h5>
+              <span>></span>
+            </div>
+          </li>
+          <li>
+            <div class="configiration">
+              <h5>Product Knowledge</h5>
+              <span>></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="team-right">
+
+        <div class="skill-list">
+          <h4>Data Model Concepts</h4>
+          <ul>
+            <li *ngFor="let concept of concepts">
+              <input type="radio">
+              Beginner
+              <img src="../../../assets/images/meter.png">
+            </li>
+          </ul>
+        </div>
+        <div class="skill-list">
+          <h4>Naming Rules</h4>
+          <ul>
+            <li *ngFor="let concept of concepts">
+              <input type="radio">
+              Assisted
+              <img src="../../../assets/images/meter.png">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </mat-card-content>
+  </mat-card>
+  <div>
+    <button mat-raised-button color="primary">Save & Next</button>
+    <button mat-raised-button color="">Save & Close</button>
+  </div>  
+</div>

@@ -1,0 +1,227 @@
+<div fxLayout="row wrap">
+    <!-- column -->
+    <div fxFlex.gt-md="27" fxFlex.gt-xs="100" fxFlex="100" class="first-card">
+        <mat-card class="md-primary-block">
+            <mat-card-header class="block-head">
+                <mat-card-subtitle class="font-16 font-normal cardHeader">Primary Skills </mat-card-subtitle>
+                <div class="float-right dash-edit">
+                    <mat-icon class="edit" (click)="onClick()">edit</mat-icon>
+                    <!-- <mat-icon class="edit" (click)="onClick()">arrow_forward</mat-icon> -->
+                </div>
+                <!-- <div fxLayout="row wrap">
+                    <div fxFlex.gt-md="80" fxFlex.gt-xs="100" fxFlex="100">
+                        <mat-card-subtitle class="font-16 font-normal">Primary Skills </mat-card-subtitle>
+                    </div>
+                    <div fxFlex.gt-md="20" fxFlex.gt-xs="100" fxFlex="100">
+                        <mat-icon class="edit">edit</mat-icon>
+                    </div>
+                </div> -->
+            </mat-card-header>
+            <mat-card-content class="primary-skills">
+                <div fxLayout="row wrap">
+                    <div fxFlex.gt-md="5" fxFlex.gt-xs="100" fxFlex="100" class="text-black font15">
+                        <p>1</p>
+                    </div>
+                    <div fxFlex.gt-md="50" fxFlex.gt-xs="100" fxFlex="100" class="text-black font15">
+                        <a [routerLink]="['/skills/dashboard']">Teamcenter Implementation</a>
+                    </div>
+                    <div fxFlex.gt-md="30" fxFlex.gt-xs="100" fxFlex="100">
+                        <circle-progress [percent]="86" [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'" [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                        </circle-progress>
+                    </div>
+                    <div fxFlex.gt-md="15" fxFlex.gt-xs="100" fxFlex="100">
+                        <p class="arrow-blue">
+                            <mat-icon>arrow_forward</mat-icon>
+                        </p>
+                    </div>
+                </div>
+                <div fxLayout="row wrap">
+                    <div fxFlex.gt-md="5" fxFlex.gt-xs="100" fxFlex="100" class="text-black">
+                        <p>2</p>
+                    </div>
+                    <div fxFlex.gt-md="50" fxFlex.gt-xs="100" fxFlex="100" class="text-black">
+                        <a [routerLink]="">Teamcenter Implementation</a>
+                    </div>
+                    <div fxFlex.gt-md="30" fxFlex.gt-xs="100" fxFlex="100">
+                        <circle-progress [percent]="40" [outerStrokeColor]="'#f5a623'" [backgroundColor]="'#fff3e0'" [titleColor]="'#f5a623'" [unitsColor]="'#f5a623'">
+                        </circle-progress>
+                    </div>
+                    <div fxFlex.gt-md="15" fxFlex.gt-xs="100" fxFlex="100">
+                        <p class="arrow-blue">
+                            <mat-icon>arrow_forward</mat-icon>
+                        </p>
+                    </div>
+                </div>
+                <div fxLayout="row wrap">
+                    <div fxFlex.gt-md="5" fxFlex.gt-xs="100" fxFlex="100" class="text-black font15">
+                        <p>1</p>
+                    </div>
+                    <div fxFlex.gt-md="50" fxFlex.gt-xs="100" fxFlex="100" class="text-black font15">
+                        <a [routerLink]="['/dashboards/skill-dashboard']">Teamcenter Implementation</a>
+                    </div>
+                    <div fxFlex.gt-md="30" fxFlex.gt-xs="100" fxFlex="100">
+                        <circle-progress [percent]="86" [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'" [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                        </circle-progress>
+                    </div>
+                    <div fxFlex.gt-md="15" fxFlex.gt-xs="100" fxFlex="100">
+                        <p class="arrow-blue">
+                            <mat-icon>arrow_forward</mat-icon>
+                        </p>
+                    </div>
+                </div>
+                <div fxLayout="row wrap">
+                    <div fxFlex.gt-md="5" fxFlex.gt-xs="100" fxFlex="100" class="text-black">
+                        <p>2</p>
+                    </div>
+                    <div fxFlex.gt-md="50" fxFlex.gt-xs="100" fxFlex="100" class="text-black">
+                        <a [routerLink]="">Teamcenter Implementation</a>
+                    </div>
+                    <div fxFlex.gt-md="30" fxFlex.gt-xs="100" fxFlex="100">
+                        <circle-progress [percent]="40" [outerStrokeColor]="'#f5a623'" [backgroundColor]="'#fff3e0'" [titleColor]="'#f5a623'" [unitsColor]="'#f5a623'">
+                        </circle-progress>
+                    </div>
+                    <div fxFlex.gt-md="15" fxFlex.gt-xs="100" fxFlex="100">
+                        <p class="arrow-blue">
+                            <mat-icon>arrow_forward</mat-icon>
+                        </p>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- column -->
+    <!-- column -->
+    <div fxFlex.gt-md="27" fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card class="secondary-skills">
+            <mat-card-header class="block-head">
+                <mat-card-subtitle class="font-16 font-normal font15 cardHeader">Secondary Skills </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="skill-set">
+                    <p class="mat-card-subtitle" class="font-10 secondary-skills-sub-title">Programming Languages</p>
+                    <div fxLayout="row wrap">
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">C++</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Java</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Oracle</button>
+                            <br>Meter
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-set">
+                    <p class="mat-card-subtitle" class="font-10 secondary-skills-sub-title">Programming Languages</p>
+                    <div fxLayout="row wrap">
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">C++</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Java</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Oracle</button>
+                            <br>Meter
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-set">
+                    <p class="mat-card-subtitle" class="font-10 secondary-skills-sub-title">Programming Languages</p>
+                    <div fxLayout="row wrap">
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">C++</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Java</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Oracle</button>
+                            <br>Meter
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-set">
+                    <p class="mat-card-subtitle" class="font-10 secondary-skills-sub-title">Programming Languages</p>
+                    <div fxLayout="row wrap">
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">C++</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Java</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Oracle</button>
+                            <br>Meter
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+            <!-- <mat-card-content>
+                <p class="mat-card-subtitle" class="font-16 font-normal">Scripting Language</p>
+                <div fxLayout="row wrap">
+                    <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                        <button mat-raised-button color="basic" class="skilsBtn">C++</button>
+                        <br>Meter
+                    </div>
+                    <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                        <button mat-raised-button color="basic" class="skilsBtn">Java</button>
+                        <br>Meter
+                    </div>
+                    <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                        <button mat-raised-button color="basic" class="skilsBtn">Oracle</button>
+                        <br>Meter
+                    </div>
+                    <hr>
+                </div>
+            </mat-card-content> -->
+        </mat-card>
+    </div>
+    <!-- column -->
+    <!-- column -->
+    <div fxFlex.gt-md="27" fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card class="project-details">
+            <mat-card-header class="block-head">
+                <mat-card-subtitle class="font-16 font-normal cardHeader">Project Details</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content class="card-content">
+                <div class="details-block">
+                    <p class="font-14 font-light">Number of Projects</p>
+                    <span class="font-bold">10</span>
+                </div>
+                <div class="details-block">
+                    <p class="font-14 font-light">Roles Taken</p>
+                    <ul>
+                        <li>Project Manager</li>
+                        <li>Team Lead</li>
+                        <li>Developer</li>
+                        <li>Tester</li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="details-block">
+                    <p class="font-14 font-light">Project Type</p>
+                    <ul>
+                        <li>Design</li>
+                        <li>Development</li>
+                    </ul>
+                </div>
+                <div class="details-block">
+                    <p class="font-14 font-light">Onsite Experience</p>
+                    <span class="font-14 out-exp">Yes</span>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- column -->
+</div>
+<!-- ============================================================== -->

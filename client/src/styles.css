@@ -1,0 +1,354 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+/* @import "~angular-vertical-timeline/dist/vertical-timeline.css"; */
+
+/* shankar styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+mat-card-header.block-head {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+mat-card-header.block-head .mat-card-header-text {
+    width: 80%;
+    margin-top: 5px;
+}
+
+.md-primary-block .primary-skills {
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.md-primary-block .primary-skills .text-black p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.md-primary-block .primary-skills a {
+    color: #000;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.md-primary-block .primary-skills .arrow-blue {
+    margin-top: 25px;
+}
+
+.mat-card.secondary-skills .mat-card-content {
+    padding: 0;
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.secondary-skills .skill-set {
+    padding: 0 30px 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.secondary-skills .skill-set:last-child {
+    border: none;
+}
+
+.project-details.mat-card .mat-card-content {
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.project-details.mat-card .mat-card-content .details-block {
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.project-details.mat-card .mat-card-content .details-block:first-child {
+    padding-top: 0;
+}
+
+.project-details.mat-card .mat-card-content .details-block p {
+    margin: 0;
+}
+
+.project-details.mat-card .mat-card-content .details-block span {
+    font-size: 28px;
+}
+
+.project-details.mat-card .mat-card-content .details-block ul {
+    padding: 0;
+    margin-top: 5px;
+}
+
+.project-details.mat-card .mat-card-content .details-block ul li {
+    width: 40%;
+    float: left;
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    list-style: disc;
+}
+
+.clearfix {
+    clear: both;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.project-details.mat-card .mat-card-content .details-block span.out-exp {
+    font-size: 14px;
+    color: #000;
+}
+
+.skill-dashboard ul li {
+    float: left;
+    padding: 5px 15px;
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.skill-dashboard ul li.active {
+    background: #fff;
+    font-weight: 600;
+}
+
+mat-card.skill-board-blocks {
+    margin: 0;
+    margin-top: 30px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(204, 204, 204, 1) !important;
+    -moz-box-shadow: 0px 0px 10px 0px rgba(204, 204, 204, 1) !important;
+    box-shadow: 0px 0px 10px 0px rgba(204, 204, 204, 1) !important;
+}
+
+.skill-board-blocks .mat-card-header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.skill-board-blocks .mat-card-header .mat-card-header-text {
+    width: 100%;
+}
+
+.skill-board-blocks .mat-card-header .mat-card-header-text .mat-card-title h4 {
+    float: left;
+    width: 35%;
+    margin: 0;
+    margin-top: 25px;
+}
+
+.skill-board-blocks .mat-card-header .mat-card-header-text .mat-card-title .skill-score {
+    float: left;
+    width: 30%;
+}
+
+.skill-board-blocks .mat-card-header .mat-card-header-text .mat-card-title .skill-score h5 {
+    margin: 0;
+    float: left;
+    margin-top: 28px;
+    margin-right: 20px;
+}
+
+.skill-board-blocks .mat-card-header .mat-card-header-text .mat-card-title .skill-score .progress-circle {
+    display: inline-block;
+    float: left;
+    width: 80px;
+}
+
+.skill-board-blocks .mat-card-header .mat-card-header-text .mat-card-title .project-skill {
+    float: left;
+    /* color: #000; */
+    margin-top: 23px;
+    font-size: 16px;
+    width: 30%;
+}
+
+.skill-board-blocks .mat-card-header .mat-card-header-text .mat-card-title .edit {
+    float: left;
+    width: 50px;
+    height: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.skill-board-blocks .mat-card-content.skill-content {
+    background: #f5f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .team-left {
+    float: left;
+    width: 30%;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .team-left ul {
+    margin: 0;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .team-left ul li {
+    background: #fff;
+    padding: 0 15px;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .team-left ul li.active-block {
+    background: #f5f8ff;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .team-left ul li .configiration {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .team-left ul li:last-child .configiration {
+    border: none;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .team-left ul li .configiration h5 {
+    margin: 0;
+    padding: 0 30px 0 10px;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .team-left ul li .configiration .progress-circle {
+    width: 70px;
+    padding: 0 10px;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .team-left ul li .configiration .progress-circle svg {
+    width: 100%;
+    padding: 0;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .team-right {
+    float: left;
+    width: 70%;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .team-right h4 {
+    font-size: 18px;
+    color: #a8a8a9;
+    margin-bottom: 15px;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .team-right .skill-list ul li {
+    float: left;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #fff;
+    font-weight: 500;
+    margin: 10px 20px 10px
+}
+
+.skill-board-blocks .mat-card-content.skill-content .web-technologies ul li {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    height: 80px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.skill-board-blocks .mat-card-content.skill-content .web-technologies ul li:nth-child(3),
+.skill-board-blocks .mat-card-content.skill-content .web-technologies ul li:nth-child(6),
+.skill-board-blocks .mat-card-content.skill-content .web-technologies ul li:nth-child(9),
+.skill-board-blocks .mat-card-content.skill-content .web-technologies ul li:nth-child(12) {
+    border-right: none;
+}
+
+.skill-board-blocks.technologies .skill-content.mat-card-content {
+    background: #fff;
+}
+
+.skill-board-blocks .skill-content.mat-card-content.secondary-skill {
+    background: #fff;
+    padding: 20px 30px;
+}
+
+.skill-board-blocks .skill-content.mat-card-content.secondary-skill .languages h5 {
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.skill-board-blocks .skill-content.mat-card-content.secondary-skill .languages .prog-languages li {
+    float: left;
+    border: 1px solid #d8d8d8;
+    background: #f5f8ff;
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-board-blocks .skill-content.mat-card-content.secondary-skill .languages .prog-languages li .langs {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.skill-board-blocks .skill-content.mat-card-content.secondary-skill .languages .prog-languages li .langs .meter {
+    margin: 0;
+    margin-top: 5px;
+    width: 50px;
+}
+
+.skill-board-blocks .skill-content.mat-card-content.secondary-skill .languages .prog-languages li .langs .meter img {
+    width: 100%;
+}
+
+.skill-board-blocks .skill-content.mat-card-content.secondary-skill .languages .prog-languages li .langs h6 {
+    font-size: 14px;
+    color: #000;
+    background: #fff;
+    padding: 5px;
+}
+
+.skill-board-blocks .skill-content.mat-card-content.secondary-skill .languages {
+    float: left;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+
+/* .mat-drawer-content {
+    overflow: inherit !important;
+} */
+
+.right-priject-details .data-blocks .edit-big-data {
+    float: right;
+}
+
+.project-details .right-priject-details .data-blocks .edit-big-data .edit-pencil {
+    background: #ccc;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}

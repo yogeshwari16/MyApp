@@ -1,0 +1,61 @@
+<!-- ============================================================== -->
+<!-- sidebar -->
+<!-- ============================================================== -->
+
+<mat-nav-list appAccordion class="sub-header">
+    <div fxLayout="row wrap"  class="app-margin" style="padding-top: 14px;padding-bottom: 14px;">
+        <div fxFlex.gt-sm="100%" >
+            <mat-list>
+                <mat-list-item class="viewer-details">
+                    <div class="viewer-details-img">
+                        <img mat-list-avatar src="./assets/images/users/1.jpg" alt="">
+                    </div>
+                    <div class="viewer-right">
+                        <h3 matLine>Abijeet Srinivastava</h3>
+                        <p matLine class="mail">abijeet@mailintor.com</p>
+                        <p class="loaction">
+                            <span class="exp">5 Years</span>
+                            <span class="locator">
+                            <mat-icon class="edit" (click)="onClick()">location_on</mat-icon>
+                          Bangalore
+                        </span>
+                        </p>
+                    </div>
+                </mat-list-item>
+                <mat-list-item class="viewer-details">
+                    <div class="viewer-details-img viewer-roles">
+                        <img mat-list-avatar src="./assets/images/users/google-shape.png" alt="">
+                    </div>
+                    <div class="viewer-right">
+                        <h3 matLine>Sr Software Engineer</h3>
+                        <p matLine class="mail">Google india</p>
+                        <span>Aug 2013 - May 2014</span>
+                    </div>
+                </mat-list-item>
+                <mat-list-item class="viewer-details">
+                    <div class="viewer-details-img viewer-roles">
+                        <img mat-list-avatar src="./assets/images/users/d-shape.png" alt="">
+                    </div>
+                    <div class="viewer-right">
+                        <h3 matLine>Master of Design</h3>
+                        <p matLine class="mail">National Institue of Design</p>
+                        <span>2013 - 2014</span>
+                    </div>
+                </mat-list-item>
+                <mat-list-item class="viewer-details">
+                    <div class="viewer-details-img viewer-roles">
+                        <img mat-list-avatar src="./assets/images/users/b-shape.png" alt="">
+                    </div>
+                    <div class="viewer-right">
+                        <h3 matLine>Bravo Awards</h3>
+                        <p matLine class="mail">Bravo Technologies</p>
+                        <span>2014</span>
+                    </div>
+                </mat-list-item>
+            </mat-list>
+        </div>
+    </div>
+</mat-nav-list>
+
+
+<!-- *ngFor="let message of messages" -->

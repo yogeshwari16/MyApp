@@ -1,0 +1,185 @@
+<div fxLayout="row wrap" class="app-margin">
+    <!-- column -->
+    <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card class="md-primary-block">
+            <mat-card-header class="block-head">
+                <mat-card-subtitle class="font-16 font-normal cardHeader">Primary Skills </mat-card-subtitle>
+                <div class="float-right dash-edit">
+                    <mat-icon class="edit" [routerLink]="['/skills']">edit</mat-icon>
+                    <!-- <mat-icon class="edit" (click)="onClick()">arrow_forward</mat-icon> -->
+                </div>
+                <!-- <div fxLayout="row wrap">
+                    <div fxFlex.gt-md="80" fxFlex.gt-xs="100" fxFlex="100">
+                        <mat-card-subtitle class="font-16 font-normal">Primary Skills </mat-card-subtitle>
+                    </div>
+                    <div fxFlex.gt-md="20" fxFlex.gt-xs="100" fxFlex="100">
+                        <mat-icon class="edit">edit</mat-icon>
+                    </div>
+                </div> -->
+            </mat-card-header>
+            <mat-card-content class="primary-skills">
+                <div fxLayout="row wrap" *ngFor="let pskill of primarySkills, let i=index"
+                    [routerLink]="['/skills/dashboard']">
+                    <div fxFlex.gt-md="5" fxFlex.gt-xs="100" fxFlex="100" class="text-black font15">
+                        <p>{{i+1}}</p>
+                    </div>
+                    <div fxFlex.gt-md="50" fxFlex.gt-xs="100" fxFlex="100" class="text-black font15">
+                        <a>{{pskill.name}}</a>
+                    </div>
+                    <div fxFlex.gt-md="30" fxFlex.gt-xs="100" fxFlex="100">
+                        <app-mystory-circle-progress [percent]="pskill.percentage">
+                        </app-mystory-circle-progress>
+                    </div>
+                    <div fxFlex.gt-md="15" fxFlex.gt-xs="100" fxFlex="100">
+                        <p class="arrow-blue">
+                            <mat-icon>arrow_forward</mat-icon>
+                        </p>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- column -->
+    <!-- column -->
+    <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card class="secondary-skills">
+            <mat-card-header class="block-head">
+                <mat-card-subtitle class="font-16 font-normal font15 cardHeader">Secondary Skills </mat-card-subtitle>
+                <div class="float-right dash-edit">
+                    <mat-icon class="edit">edit</mat-icon>
+                    <!-- <mat-icon class="edit" (click)="onClick()">arrow_forward</mat-icon> -->
+                </div>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="skill-set">
+                    <p class="mat-card-subtitle" class="font-10 secondary-skills-sub-title">Programming Languages</p>
+                    <div fxLayout="row wrap">
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">C++</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Java</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Oracle</button>
+                            <br>Meter
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-set">
+                    <p class="mat-card-subtitle" class="font-10 secondary-skills-sub-title">Programming Languages</p>
+                    <div fxLayout="row wrap">
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">C++</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Java</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Oracle</button>
+                            <br>Meter
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-set">
+                    <p class="mat-card-subtitle" class="font-10 secondary-skills-sub-title">Programming Languages</p>
+                    <div fxLayout="row wrap">
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">C++</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Java</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Oracle</button>
+                            <br>Meter
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-set">
+                    <p class="mat-card-subtitle" class="font-10 secondary-skills-sub-title">Programming Languages</p>
+                    <div fxLayout="row wrap">
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">C++</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Java</button>
+                            <br>Meter
+                        </div>
+                        <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                            <button mat-raised-button color="basic" class="skilsBtn">Oracle</button>
+                            <br>Meter
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+            <!-- <mat-card-content>
+                <p class="mat-card-subtitle" class="font-16 font-normal">Scripting Language</p>
+                <div fxLayout="row wrap">
+                    <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                        <button mat-raised-button color="basic" class="skilsBtn">C++</button>
+                        <br>Meter
+                    </div>
+                    <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                        <button mat-raised-button color="basic" class="skilsBtn">Java</button>
+                        <br>Meter
+                    </div>
+                    <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+                        <button mat-raised-button color="basic" class="skilsBtn">Oracle</button>
+                        <br>Meter
+                    </div>
+                    <hr>
+                </div>
+            </mat-card-content> -->
+        </mat-card>
+    </div>
+    <!-- column -->
+    <!-- column -->
+    <div fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card class="project-details">
+            <mat-card-header class="block-head">
+                <mat-card-subtitle class="font-16 font-normal cardHeader">Project Details</mat-card-subtitle>
+                <div class="float-right dash-edit">
+                    <mat-icon class="edit" [routerLink]="['/projects']">edit</mat-icon>
+                    <mat-icon class="edit" [routerLink]="['/projects/project-details']">arrow_forward</mat-icon>
+                </div>
+            </mat-card-header>
+            <mat-card-content class="card-content">
+                <div class="details-block">
+                    <p class="font-14 font-light">Number of Projects</p>
+                    <span class="font-bold">10</span>
+                </div>
+                <div class="details-block">
+                    <p class="font-14 font-light">Roles Taken</p>
+                    <ul>
+                        <li>Project Manager</li>
+                        <li>Team Lead</li>
+                        <li>Developer</li>
+                        <li>Tester</li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="details-block">
+                    <p class="font-14 font-light">Project Type</p>
+                    <ul>
+                        <li>Design</li>
+                        <li>Development</li>
+                    </ul>
+                </div>
+                <div class="details-block">
+                    <p class="font-14 font-light">Onsite Experience</p>
+                    <span class="font-14 out-exp">Yes</span>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- column -->
+</div>
+<!-- ============================================================== -->

@@ -1,0 +1,300 @@
+<div class="skill-dashboard">
+    <mat-tab-group>
+        <mat-tab label="Teamcenter Implementation">
+            <mat-card-content>
+                <mat-card class="skill-board-blocks">
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h4>Teamcenter Implementation</h4>
+                            <div class="skill-score">
+                                <h5>Skill Score</h5>
+                                <circle-progress class="progress-circle" [percent]="86" [outerStrokeColor]="'#6ab519'"
+                                    [backgroundColor]="'#edf9de'" [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                </circle-progress>
+                                <div class="clear"></div>
+                            </div>
+                            <a class="project-skill" [routerLink]="['/projects/project-details']">See project on the
+                                skills
+                                <mat-icon class="arrow">arrow_forward</mat-icon>
+                            </a>
+                            <div class="edit">
+                                <mat-icon class="edit-pencil" (click)="edit()">edit</mat-icon>
+                            </div>
+                            <div class="clear"></div>
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content class="skill-content">
+                        <div class="team-left">
+                            <ul>
+                                <li class="active-block">
+                                    <div class="configiration">
+                                        <h5>BMIDE Configuration</h5>
+                                        <circle-progress class="progress-circle" [percent]="86"
+                                            [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'"
+                                            [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                        </circle-progress>
+                                        <span>></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="configiration">
+                                        <h5>BMIDE Configuration</h5>
+                                        <circle-progress class="progress-circle" [percent]="86"
+                                            [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'"
+                                            [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                        </circle-progress>
+                                        <span>></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="configiration">
+                                        <h5>BMIDE Configuration</h5>
+                                        <circle-progress class="progress-circle" [percent]="86"
+                                            [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'"
+                                            [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                        </circle-progress>
+                                        <span>></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="configiration">
+                                        <h5>BMIDE Configuration</h5>
+                                        <circle-progress class="progress-circle" [percent]="86"
+                                            [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'"
+                                            [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                        </circle-progress>
+                                        <span>></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="configiration">
+                                        <h5>BMIDE Configuration</h5>
+                                        <circle-progress class="progress-circle" [percent]="86"
+                                            [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'"
+                                            [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                        </circle-progress>
+                                        <span>></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team-right">
+                            <h4>BMIDE Configuration Skill Set</h4>
+                            <div class="skill-list">
+                                <ul>
+                                    <li *ngFor="let concept of concepts">Data Model Concepts</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </mat-card-content>
+                </mat-card>
+            </mat-card-content>
+        </mat-tab>
+        <mat-tab label="Web Technologies">
+            <mat-card-content>
+                <mat-card class="skill-board-blocks technologies">
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h4>2.&nbsp;Web Technologies</h4>
+                            <div class="skill-score">
+                                <h5>Skill Score</h5>
+                                <circle-progress class="progress-circle" [percent]="40" [outerStrokeColor]="'#6ab519'"
+                                    [backgroundColor]="'#edf9de'" [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                </circle-progress>
+                                <div class="clear"></div>
+                            </div>
+                            <a class="project-skill" [routerLink]="['../project-details']">See project on the skills
+                                <mat-icon class="arrow" (click)="onClick()">arrow_forward</mat-icon>
+                            </a>
+                            <div class="edit">
+                                <mat-icon class="edit-pencil" (click)="onClick()">edit</mat-icon>
+                            </div>
+                            <div class="clear"></div>
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content class="skill-content">
+                        <div class="web-technologies">
+                            <ul>
+                                <li *ngFor="let concept of concepts">BMIDE Configuration</li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </mat-card-content>
+                </mat-card>
+            </mat-card-content>
+        </mat-tab>
+        <mat-tab label="Artificial Intelligence">
+            <mat-card-content>
+                <mat-card class="skill-board-blocks technologies">
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h4>3.&nbsp;Web Technologies</h4>
+                            <div class="skill-score">
+                                <h5>Skill Score</h5>
+                                <circle-progress class="progress-circle" [percent]="40" [outerStrokeColor]="'#6ab519'"
+                                    [backgroundColor]="'#edf9de'" [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                </circle-progress>
+                                <div class="clear"></div>
+                            </div>
+                            <a class="project-skill" [routerLink]="['../project-details']">See project on the skills
+                                <mat-icon class="arrow" (click)="onClick()">arrow_forward</mat-icon>
+                            </a>
+                            <div class="edit">
+                                <mat-icon class="edit-pencil" (click)="onClick()">edit</mat-icon>
+                            </div>
+                            <div class="clear"></div>
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content class="skill-content">
+                        <div class="web-technologies">
+                            <ul>
+                                <li *ngFor="let concept of concepts">BMIDE Configuration</li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </mat-card-content>
+                </mat-card>
+            </mat-card-content>
+        </mat-tab>
+        <mat-tab label="Machine Learning">
+            <mat-card-content>
+                <mat-card class="skill-board-blocks">
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h4>4.&nbsp;Secondary Skills</h4>
+                            <div class="skill-score">
+                                <h5>Skill Score</h5>
+                                <circle-progress class="progress-circle" [percent]="86" [outerStrokeColor]="'#6ab519'"
+                                    [backgroundColor]="'#edf9de'" [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                </circle-progress>
+                                <div class="clear"></div>
+                            </div>
+                            <a class="project-skill" [routerLink]="['../project-details']">See project on the skills
+                                <mat-icon class="arrow" (click)="onClick()">arrow_forward</mat-icon>
+                            </a>
+                            <div class="edit">
+                                <mat-icon class="edit-pencil" (click)="onClick()">edit</mat-icon>
+                            </div>
+                            <div class="clear"></div>
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content class="skill-content">
+                        <div class="team-left">
+                            <ul>
+                                <li class="active-block">
+                                    <div class="configiration">
+                                        <h5>BMIDE Configuration</h5>
+                                        <circle-progress class="progress-circle" [percent]="86"
+                                            [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'"
+                                            [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                        </circle-progress>
+                                        <span>></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="configiration">
+                                        <h5>BMIDE Configuration</h5>
+                                        <circle-progress class="progress-circle" [percent]="86"
+                                            [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'"
+                                            [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                        </circle-progress>
+                                        <span>></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="configiration">
+                                        <h5>BMIDE Configuration</h5>
+                                        <circle-progress class="progress-circle" [percent]="86"
+                                            [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'"
+                                            [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                        </circle-progress>
+                                        <span>></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="configiration">
+                                        <h5>BMIDE Configuration</h5>
+                                        <circle-progress class="progress-circle" [percent]="86"
+                                            [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'"
+                                            [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                        </circle-progress>
+                                        <span>></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="configiration">
+                                        <h5>BMIDE Configuration</h5>
+                                        <circle-progress class="progress-circle" [percent]="86"
+                                            [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'"
+                                            [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                        </circle-progress>
+                                        <span>></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team-right">
+                            <h4>BMIDE Configuration Skill Set</h4>
+                            <div class="skill-list">
+                                <ul>
+                                    <li *ngFor="let concept of concepts">Data Model Concepts</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </mat-card-content>
+                </mat-card>
+            </mat-card-content>
+        </mat-tab>
+        <mat-tab label="Secondary Skills">
+            <mat-card-content>
+                <mat-card class="skill-board-blocks">
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h4>5.&nbsp;Secondary Skills</h4>
+                            <!-- <div class="skill-score">
+                                <h5>Skill Score</h5>
+                                <circle-progress class="progress-circle" [percent]="86" [outerStrokeColor]="'#6ab519'" [backgroundColor]="'#edf9de'" [titleColor]="'#6ab519'" [unitsColor]="'#6ab519'">
+                                </circle-progress>
+                                <div class="clear"></div>
+                            </div> -->
+                            <!-- <a class="project-skill" href="">See project on the skills</a>
+                            <div class="edit"></div> -->
+                            <div class="clear"></div>
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content class="skill-content secondary-skill">
+                        <div class="languages" *ngFor="let skill of skills">
+                            <h5>Programming Languages</h5>
+                            <ul class="prog-languages">
+                                <li>
+                                    <div class="langs">
+                                        <h6>C++</h6>
+                                        <p class="meter">
+                                            <img src="assets/images/meter.png" alt="">
+                                        </p>
+                                    </div>
+                                    <div class="langs">
+                                        <h6>Java</h6>
+                                        <p class="meter">
+                                            <img src="assets/images/meter.png" alt="">
+                                        </p>
+                                    </div>
+                                    <div class="langs">
+                                        <h6>Oracle</h6>
+                                        <p class="meter">
+                                            <img src="assets/images/meter.png" alt="">
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </mat-card-content>
+                </mat-card>
+            </mat-card-content>
+        </mat-tab>
+    </mat-tab-group>
+</div>
